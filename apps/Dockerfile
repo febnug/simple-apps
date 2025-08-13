@@ -7,6 +7,9 @@ RUN apt update -y && npm install
 # copy file to image
 ADD . /app
 
+# maintainer image
+LABEL email="febriyantonugroho51@gmail.com"
+
 # perintah yang di jalankan pada saat container sudah up
 CMD ["npm", "start"]
 
